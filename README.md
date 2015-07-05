@@ -15,5 +15,6 @@ The basic flow is as follows:
 3. Once deployed, Jenkins can build a Docker image and commit it to the registry.
 4. Finally, Jenkins can invoke a shell script to run a docker image with the generated artefact. 
 
-
-To get started, download docker-compose and then execute `docker-compose up` in the same folder where you downloaded this repository.
+# Get Started
+First you will need to edit `docker-compose.yml` to set the shared folder where the products will store the data.
+After you have set the volumes, execute `docker-compose up` in the same folder where you downloaded this repository.
