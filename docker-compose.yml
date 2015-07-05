@@ -3,9 +3,9 @@ postgresql:
   environment:
     - DB_USER=gitlab
     - DB_PASS=password
-    - DB_NAME=gitlabhq_production
-  volumes:
-    - /Users/jmiddleton/Documents/tmp/postgresql:/var/lib/postgresql
+    - DB_NAME=gitlabdb
+#  volumes:
+#    - /Users/jmiddleton/Documents/tmp/postgresql:/var/lib/postgresql
 gitlab:
   image: sameersbn/gitlab:7.12.0
   links:
@@ -43,7 +43,6 @@ artifactory:
   ports:
     - "38081:8081"
     - "30080:80"
-
 jenkins:
   image: jenkins
   environment:
