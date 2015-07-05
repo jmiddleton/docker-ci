@@ -1,10 +1,10 @@
 # docker-ci - Docker Continuous Integration Framework
 Docker-compose to provision a complete Continuous Integration Framework (CI). The following products are configured as part of the framework:
 
-- Gitlab (http://192.168.59.103:10080). https://github.com/sameersbn/docker-gitlab
-- Jenkins (http://192.168.59.103:32768)
-- SonarQube (http://192.168.59.103:49000)
-- Artifactory (http://192.168.59.103:30081)
+- Gitlab (http://192.168.59.103:10080): https://github.com/sameersbn/docker-gitlab
+- Jenkins (http://192.168.59.103:32768): https://github.com/jenkinsci/docker
+- SonarQube (http://192.168.59.103:49000): https://github.com/SonarSource/docker-sonarqube
+- Artifactory (http://192.168.59.103:38081): https://www.jfrog.com/confluence/display/RTF/Docker+Repositories
 - Docker Private Registry (http://192.168.59.103:5000)
 
 The main goal of this compose is to provide a tool to quickly set up a CI environment. It is intended for those who want to start researching about CI and do some testing using the above products. You can easily run the full stack on one VM.
